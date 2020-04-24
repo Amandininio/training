@@ -1,0 +1,48 @@
+<!-- exo from http://www.exelib.net/html/la-mise-en-forme-de-texte-avec-des-balises-html.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bold{
+            font-weight: bold;
+        }
+        .underline{
+            text-decoration: underline;
+        }
+        .italic{
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1 title="Extensible Markup language">XML</h1>
+    <h2> Definition</h2>
+    <p><abbr title="Extensible Markup language" class="bold">XML Schema</abbr> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis nobis quas explicabo magni omnis aperiam reprehenderit i</p>
+    <h2>Exemple</h2>
+    <!-- la balise code pour définir un block de code cependant ila faut remplacer les élements "<" et ">" par les entités &lt; et  &gt; , tandis que la balise "pre" affiche le code tel qu'il est écrit.  -->
+    <code>
+        <pre>
+            &lt;?xml version="1.0" encoding="UTF-8"?&gt;
+         &lt;xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;
+           &lt;xs:element name="personne"&gt;
+                 &lt;xs:complexType&gt;
+                   &lt;xs:sequence&gt;
+                         &lt;xs:element name="nom" type="xs:string" /&gt;
+                         &lt;xs:element name="prenom" type="xs:string" /&gt;
+                         &lt;xs:element name="date_naissance" type="xs:date" /&gt;
+                         &lt;xs:element name="etablissement" type="xs:string" /&gt;
+                         &lt;xs:element name="num_tel" type="xs:string" /&gt;
+                   &lt;/xs:sequence&gt;
+                 &lt;/xs:complexType&gt;
+           &lt;/xs:element&gt;
+         &lt;/xs:schema&gt;
+       </pre>
+    </code>
+    <hr/>
+    <p><span class="underline">Citation</span> Voici une magnifique citation de <span class="italic">jean michel Italic</span></p>
+
+</body>
+</html>

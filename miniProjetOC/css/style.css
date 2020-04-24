@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+/* Wrap margin auto 80vw */
+.wrap{
+    width: 85vw;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 1.3em;
+}
+/* Image entête width = Wrap + arrondie  */
+#imagePresentation{
+    object-fit: cover;
+    height: 250px;
+    border-radius: 20px;
+    width: fit-content;
+}
+/* Header */
+h1, h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin: 20px 0 0 0;
+}
+hr{
+    margin: 0px;
+}
+/* tables */
+table{
+    border-collapse: collapse;
+    width: fit-content;
+    width: inherit;
+}
+td, th{
+    border-top: 1px solid black;
+    text-align: center;
+}
+.rowheaders{
+    font-weight: bold;
+}

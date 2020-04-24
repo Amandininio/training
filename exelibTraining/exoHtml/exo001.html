@@ -1,0 +1,25 @@
+<!-- exo from  http://www.exelib.net/html/validation-d-un-formulaire-avec-l-attribut-pattern.html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation d'un formulaire avec l'attribut pattern</title>
+    <style>
+        input:valid{
+            border: 1px solid green;
+        }
+        input:invalid{
+            border: 1px dotted  red;
+        }
+    </style>
+</head>
+<body>
+    <form action="exo1.html" method="GET">
+        <input type="email" name="email" id="userMail" placeholder="Email" required pattern=".*exelib\.net$" >
+        <input type="password" name="password" id="userPassword" placeholder="Password" minlength="6" maxlength="8" pattern=".*[0-9].*" required >
+        <input type="submit" name="password" id="userPassword" placeholder="Password">
+    </form>
+    <a href="/Users/amandiomotadasilva/Document/devDir/exelibTraining/exoHtml/exo1.html">Clean</a>
+</body>
+</html>

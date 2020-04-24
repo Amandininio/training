@@ -1,0 +1,33 @@
+/* 
+    Comme vous pouvez le constater, grâce à Boostrap, il y a assez peu de CSS.
+    Je m'occupe uniquement de l'image de la recette et des éléments liés à la présentation de la recette.
+    Il est suffisament clair pour ne pas avoir besoin de trop de commentaires.
+ */
+
+/* Image principale de la recette */
+.recipe-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+/* Partie présentation de la recette */
+.circle-box {
+  height: 75px;
+  width: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-box {
+  width: 75px;
+}
+
+.difficulty-text {
+  height: 75px;
+  width: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

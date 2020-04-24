@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- https://www.exelib.net/javascript/modifier-les-styles-avec-un-input-de-type-range.html#enonce-tab -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <table>
+       <tr>
+           <th><label for="rgb">Couleur de fond</label></th>
+           <td><input oninput="updateValue(this)" id="color" value="#ADD8E6" type="color"> Background</td>
+           <td rowspan="6" id="exempleBox"> <div><span id="inputTest">Wanna play</span></div></td>
+       </tr>
+       <tr>
+           <th><label for="padding">Padding</label> </th>
+           <td>0 <input oninput="updateValue(this)" id="padding" min="0" value="0" type="range" max="30"> 30 </td>
+       </tr>
+       <tr>
+           <th><label for="height"> Height </label></th>
+           <td>0 <input oninput="updateValue(this)" id="height" min="0" value="0" type="range" max="200"> 200</td>
+       </tr>
+       <tr>
+           <th><label for="width"> Width </label></th>
+           <td>0 <input oninput="updateValue(this)" id="width" min="0" value="0" type="range" max="200"> 200</td>
+       </tr>
+       <tr>
+           <th><label for="radius"> Arrondi</label></th>
+           <td>0 <input oninput="updateValue(this)" id="radius" min="0" value="0" type="range" max="50"> 30 </td>
+       </tr>
+       <tr>
+           <th><label for="rotation"> rotation</label></th>
+           <td>0 <input oninput="updateValue(this)" id="rotation" min="0" value="0" type="range" max="360">360 </td>
+       </tr>
+    </table>
+    <button onclick="reset()"> Reset </button>
+    <script defer src="./script.js"></script>
+</body>
+</html>
